@@ -136,14 +136,23 @@ html {
   }
 }
 
-@media (max-width: 600px) {
-  .card__rate {
-    flex-wrap: wrap;
-    row-gap: var(--spacing-4);
+@media (max-width: 900px) {
+  .card__rate-label {
+    font-size: 11px;
   }
 
   .card__rate-value {
-    font-size: var(--text-heading-sm);
+    font-size: 16px;
+  }
+
+  .card__rate-time {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card__rate-value {
+    font-size: 15px;
   }
 
   .reviews-carousel__stage {
