@@ -1,0 +1,203 @@
+/* ——— Keyframes ——— */
+
+@keyframes fade-up {
+  from {
+    transform: translateY(24px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ——— Reveal on scroll ——— */
+
+.reveal {
+  transform: translateY(28px);
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--reveal-delay, 0ms));
+}
+
+.reveal.is-visible {
+  transform: translateY(0);
+}
+
+.reveal--from-left {
+  transform: translateX(-32px);
+}
+
+.reveal--from-right {
+  transform: translateX(32px);
+}
+
+.reveal--from-left.is-visible,
+.reveal--from-right.is-visible {
+  transform: translateX(0);
+}
+
+/* ——— Hero entrance ——— */
+
+.hero--loaded .hero__portrait-stage .portrait {
+  animation: fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+
+.header--loaded {
+  animation: slide-down 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ——— Illustrations ——— */
+
+.section__visual.is-visible .illustration {
+  animation: fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both,
+    float 5s ease-in-out 0.65s infinite;
+}
+
+.section__visual.is-visible .illustration--alt {
+  animation-duration: 0.65s, 4.5s;
+  animation-delay: 0s, 0.8s;
+}
+
+.section__visual.is-visible .portrait {
+  animation: fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ——— Cards ——— */
+
+.card.reveal.is-visible:hover {
+  transform: translateY(-4px);
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.2s ease,
+    border-color 0.15s ease;
+}
+
+.card__icon {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card.reveal.is-visible:hover .card__icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+/* ——— Skill bars ——— */
+
+.skill-item__fill {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--skill-i, 0) * 0.1s);
+}
+
+.skill-item.is-visible .skill-item__fill {
+  transform: scaleX(var(--skill-scale, 0));
+}
+
+/* ——— Interactive polish ——— */
+
+.logo:hover .logo__mark {
+  animation: wiggle 0.45s ease;
+}
+
+.btn--primary.btn--success {
+  animation: pop 0.35s ease;
+}
+
+.nav__link {
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: var(--color-duo-green);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.nav__link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ——— Reduced motion ——— */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .skill-item__fill {
+    transform: scaleX(var(--skill-scale, 0));
+  }
+}

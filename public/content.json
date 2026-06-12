@@ -1,0 +1,251 @@
+{
+  "site": {
+    "title": "Репетитор по информатике: ЕГЭ и ОГЭ 2027",
+    "description": "Репетитор по информатике: подготовка к ЕГЭ и ОГЭ 2027. Python, алгоритмы, практика на реальных заданиях.",
+    "logo": "Никита · информатика",
+    "ctaHeader": "Записаться"
+  },
+  "hero": {
+    "badgeEge": "ЕГЭ 2027",
+    "badgeOge": "ОГЭ 2027",
+    "photo": "/photo.png",
+    "photoAlt": "",
+    "tagline": "Никита — репетитор по информатике",
+    "title": "обо мне.",
+    "intro": "Меня зовут Никита. Готовлю к <strong>ЕГЭ и ОГЭ по информатике</strong>.",
+    "approachTitle": "Мой подход",
+    "approachItems": [
+      "Python, алгоритмы и теория.",
+      "Объясняю по шагам и без зубрёжки.",
+      "Упор на понимание и практику."
+    ],
+    "lessonsTitle": "На занятиях",
+    "lessonsItems": [
+      "Пишем живой код.",
+      "Решаем задачи прошлых лет.",
+      "Оптимизация времени на экзамене."
+    ],
+    "note": "Набор на 2026–2027 учебный год.",
+    "ctaPrimary": "Записаться",
+    "ctaSecondary": "Форматы занятий",
+    "layout": {
+      "photoSize": 299,
+      "mobilePhotoSize": 124,
+      "photoShape": "rounded",
+      "photoPosition": "left",
+      "photoBorder": 3,
+      "photoBorderColor": "#d7ffb8",
+      "photoRingColor": "#58cc02",
+      "photoOffsetX": 0,
+      "photoOffsetY": 0,
+      "titleSize": 43,
+      "titleColor": "#58cc02",
+      "taglineSize": 18,
+      "introSize": 17,
+      "textColor": "#3c3c3c",
+      "accentColor": "#58cc02",
+      "blockGap": 16,
+      "listGap": 9,
+      "sectionPaddingTop": 64,
+      "sectionPaddingBottom": 40,
+      "primaryBtnBg": "#58a700",
+      "secondaryBtnColor": "#1cb0f6",
+      "ctaGap": 12,
+      "badgeSize": 15,
+      "blockOrder": [
+        "tagline",
+        "title",
+        "intro",
+        "photo",
+        "approach",
+        "note",
+        "lessons",
+        "cta"
+      ],
+      "extraBlocks": [],
+      "hiddenBlocks": [
+        "tagline"
+      ]
+    }
+  },
+  "programs": {
+    "title": "занятия.",
+    "intro": "Индивидуально и в мини-группах: от базы в 9 классе до высоких баллов на ЕГЭ.",
+    "cards": [
+      {
+        "letter": "Е",
+        "title": "ЕГЭ 2027",
+        "desc": "Python, алгоритмизация, задания 13–27: от базы до повышенной сложности, пробники и разбор КИМ.",
+        "individualPrice": "1 500",
+        "groupPrice": "1 000"
+      },
+      {
+        "letter": "О",
+        "title": "ОГЭ 2027",
+        "desc": "Теория, Excel и Python по кодификатору, типовые задачи и тренировка на время, спокойно и системно.",
+        "individualPrice": "1 500",
+        "groupPrice": "1 000"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "почему со мной.",
+    "intro": "Подготовка к информатике без сухой зубрёжки: понятная логика, практика и поддержка до экзамена.",
+    "items": [
+      {
+        "title": "План под вас",
+        "text": "ОГЭ, ЕГЭ или «подтянуть базу»: программа под ваш класс, сроки и текущий уровень, без лишних тем."
+      },
+      {
+        "title": "Задания как на экзамене",
+        "text": "Разбираем форматы КИМ, типовые ловушки и критерии проверки, чтобы на экзамене не было сюрпризов."
+      },
+      {
+        "title": "Python понятным языком",
+        "text": "Объясняю простыми словами, много пишем код на занятии: от переменных до задач повышенной сложности."
+      },
+      {
+        "title": "Удобное время",
+        "text": "Занятия онлайн, подстроюсь под школу, секции и нагрузку: можно вечером или в выходные."
+      },
+      {
+        "title": "Виден прогресс",
+        "text": "Отслеживаем темы и баллы на пробниках: понятно, что уже получается, а что ещё добить."
+      },
+      {
+        "title": "Помощь между уроками",
+        "text": "Застряли на домашке? Напишите, подскажу по задаче, чтобы не копить пробелы до следующего занятия."
+      }
+    ]
+  },
+  "dashboard": {
+    "eyebrow": "Только у моих учеников",
+    "title": "мой дашборд.",
+    "lead": "Не просто занятия в Zoom: у каждого ученика личный кабинет <strong>All4Tutors</strong>: расписание, задания, оплаты и прогресс в одном месте.",
+    "features": [
+      "Расписание и напоминания о занятиях",
+      "Прогресс по темам и баллы на пробниках",
+      "Домашки, конспекты и ссылки на разборы"
+    ],
+    "cta": "Записаться на занятие",
+    "screenshot": "/all4tutors-dashboard.png",
+    "screenshotAlt": "All4Tutors: дашборд ученика, расписание, задания и оплаты",
+    "brand": ""
+  },
+  "reviews": {
+    "title": "отзывы.",
+    "intro": "Реальные отзывы: скриншоты с Авито и из переписки с учениками.",
+    "slides": [
+      {
+        "src": "/reviews/review-avito-1.png",
+        "alt": "Отзыв на Авито, kost, 5 звёзд"
+      },
+      {
+        "src": "/reviews/review-avito-2.png",
+        "alt": "Отзыв на Авито, Мария, 5 звёзд"
+      },
+      {
+        "src": "/reviews/review-avito-3.png",
+        "alt": "Отзыв на Авито, пересдача, 46 до 64 баллов"
+      },
+      {
+        "src": "/reviews/review-avito-4.png",
+        "alt": "Отзыв на Авито, рекомендация репетитора"
+      },
+      {
+        "src": "/reviews/review-avito-5.png",
+        "alt": "Отзыв на Авито, рекомендация Никиты как преподавателя"
+      },
+      {
+        "src": "/reviews/review-avito-6.png",
+        "alt": "Отзыв на Авито, отличный преподаватель"
+      },
+      {
+        "src": "/reviews/review-tg-1.png",
+        "alt": "Отзыв в переписке, благодарность после подготовки"
+      },
+      {
+        "src": "/reviews/review-tg-2.png",
+        "alt": "Отзыв в переписке, лучший репетитор"
+      }
+    ]
+  },
+  "skills": {
+    "title": "программа.",
+    "intro": "Что проходим на занятиях: под ваш класс и цель экзамена.",
+    "ege": {
+      "badge": "ЕГЭ",
+      "items": [
+        {
+          "label": "Python",
+          "width": 66
+        },
+        {
+          "label": "Excel+Word",
+          "width": 15
+        },
+        {
+          "label": "Ручные задания",
+          "width": 19
+        }
+      ]
+    },
+    "oge": {
+      "badge": "ОГЭ",
+      "items": [
+        {
+          "label": "Ручные задания",
+          "width": 62.5
+        },
+        {
+          "label": "Excel+Word",
+          "width": 12.5
+        },
+        {
+          "label": "Кумир",
+          "width": 6.25
+        },
+        {
+          "label": "Python",
+          "width": 6.25
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "напишите.",
+    "text": "Хотите на пробный урок или уточнить расписание? Напишите класс, цель (ОГЭ / ЕГЭ) и удобное время, отвечу в течение суток.",
+    "formNamePlaceholder": "Ваше имя",
+    "formEmailPlaceholder": "Email",
+    "formMessagePlaceholder": "Класс, ОГЭ или ЕГЭ, что хотите подтянуть...",
+    "formSubmit": "Отправить",
+    "cardHeader": "Контакты",
+    "photo": "/photo.png",
+    "photoAlt": "Никита, репетитор по информатике",
+    "name": "Никита",
+    "role": "Репетитор по информатике",
+    "phone": "+7 950 430-38-01",
+    "phoneHref": "tel:+79504303801",
+    "telegram": "@closetolose",
+    "telegramHref": "https://t.me/closetolose",
+    "email": "closetolose@gmail.com",
+    "emailHref": "mailto:closetolose@gmail.com"
+  },
+  "tools": {
+    "title": "На занятиях",
+    "subtitle": "Python, таблицы и тексты: всё, что встречается на ОГЭ и ЕГЭ",
+    "cta": "Записаться на урок"
+  },
+  "photoPosition": "left",
+  "photoSize": "300",
+  "photoShape": "rounded",
+  "photoBorder": "4",
+  "photoBorderColor": "#d7ffb8",
+  "photoRingColor": "#58cc02",
+  "photoOffsetX": "0",
+  "photoOffsetY": "0",
+  "blockGap": "16",
+  "listGap": "9",
+  "accentColor": "#58cc02",
+  "textColor": "#3c3c3c"
+}

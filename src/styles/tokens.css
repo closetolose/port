@@ -1,0 +1,88 @@
+:root {
+  /* Colors */
+  --color-duo-green: #58cc02;
+  --color-sky-blue: #1cb0f6;
+  --color-duo-green-light: #d7ffb8;
+  --color-sunshine-yellow: #ffc700;
+  --color-grape-soda: #a570ff;
+  --color-bubblegum-pink: #cc348d;
+  --color-snow-white: #ffffff;
+  --color-cloud-gray: #e5e5e5;
+  --color-border: #b8c4d4;
+  --color-border-strong: #9aa8ba;
+  --color-border-shadow: #a3b1c2;
+  --color-silver: #8a8a8a;
+  --color-graphite: #5c6672;
+  --color-sky-blue-text: #0a6fa8;
+  --color-duo-green-text: #3a7d01;
+  --color-charcoal: #4b4b4b;
+  --color-almost-black: #3c3c3c;
+  --color-duo-green-shadow: #3f8f01;
+  --color-duo-green-deep: #256300;
+  --color-sky-blue-deep: #0a7099;
+
+  /* Фон как в видео */
+  --color-video-bg: #f4f8fe;
+  --color-video-bg-mid: #f8fbff;
+  --color-video-bg-soft: #eef3fb;
+
+  /* Фоны смысловых блоков (лёгкое чередование) */
+  --color-section-a: var(--color-video-bg);
+  --color-section-b: var(--color-video-bg-mid);
+  --color-section-c: var(--color-video-bg-soft);
+  --color-section-d: var(--color-snow-white);
+
+  /* Typography — Font Families */
+  --font-feather: 'Fredoka', ui-sans-serif, system-ui, sans-serif;
+  --font-din-round: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* Typography — Scale */
+  --text-caption: 13px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.03em;
+  --text-body: 15px;
+  --leading-body: 1.4;
+  --tracking-body: 0.02em;
+  --text-heading-sm: clamp(17px, 2.5vw, 19px);
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: 0.03em;
+  --text-heading: clamp(1.5rem, 2.5vw + 0.75rem, 2rem);
+  --leading-heading: 1.2;
+  --tracking-heading: 0.03em;
+  --text-heading-lg: clamp(2rem, 4.5vw + 0.5rem, 3rem);
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.02em;
+  --text-display: clamp(2.25rem, 5.5vw + 0.5rem, 4rem);
+  --leading-display: 1.12;
+  --tracking-display: -0.03em;
+
+  /* Typography — Weights */
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-unit: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+
+  /* Layout */
+  --page-max-width: 1140px;
+  --section-gap: clamp(3.5rem, 8vw, 6.25rem);
+  --container-padding: clamp(1rem, 4vw, 1.5rem);
+  --card-padding: clamp(1.125rem, 3vw, 1.5rem);
+  --element-gap: 16px;
+
+  /* Border Radius */
+  --radius-xl: 12px;
+  --radius-cards: 12px;
+  --radius-inputs: 12px;
+  --radius-buttons: 12px;
+}

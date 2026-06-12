@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-08T14:00:00.000Z",
+  "title": "Design System: Никита · информатика",
+  "extensions": {
+    "colorMeta": {
+      "duo-green-deep": {
+        "role": "primary",
+        "displayName": "Duo Green Deep",
+        "canonical": "#256300",
+        "purpose": "Primary buttons, dark sections, white text on top"
+      },
+      "duo-green-text": {
+        "role": "primary",
+        "displayName": "Duo Green Text",
+        "canonical": "#3a7d01",
+        "purpose": "Headlines and links on light backgrounds"
+      },
+      "video-bg": {
+        "role": "neutral",
+        "displayName": "Video Background",
+        "canonical": "#f4f8fe"
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Fredoka", "purpose": "Секционные заголовки." },
+      "body": { "displayName": "Nunito Sans", "purpose": "Body, nav, кнопки, формы." }
+    },
+    "motion": [
+      { "name": "ease-reveal", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Scroll reveal (transform only)." }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "900px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Главный CTA.",
+      "html": "<a class=\"btn btn--primary\" href=\"#contact\">Записаться</a>",
+      "css": ".btn--primary { color: #fff; background: #256300; box-shadow: 0 4px 0 #3f8f01; border-radius: 12px; padding: 16px 32px; font-weight: 700; text-transform: uppercase; }"
+    },
+    {
+      "name": "Benefit Lead Card",
+      "kind": "card",
+      "refersTo": "benefit-card--lead",
+      "description": "Главная карточка преимуществ: иконка слева, заголовок и текст справа.",
+      "html": "<li class=\"benefit-card benefit-card--lead\"><div class=\"benefit-card__icon\">…</div><h3 class=\"benefit-card__title\">…</h3><p class=\"benefit-card__text\">…</p></li>",
+      "css": ".benefit-card--lead { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto auto; } .benefit-card--lead .benefit-card__icon { grid-column: 1; grid-row: 1 / 3; } .benefit-card--lead .benefit-card__title { grid-column: 2; grid-row: 1; } .benefit-card--lead .benefit-card__text { grid-column: 2; grid-row: 2; max-width: 65ch; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Урок, который хочется открыть",
+    "overview": "Duolingo-вайб без инфантильности: читаемые контрасты, bento benefits, mobile drawer.",
+    "keyCharacteristics": ["Deep green CTA", "Horizontal card icons", "Fredoka + Nunito Sans", "WCAG AA contrast"],
+    "rules": [
+      { "name": "Contrast first", "body": "duo-green-text и sky-blue-text на светлых фонах.", "section": "colors" },
+      { "name": "Transform-only reveal", "body": "Контент виден без JS.", "section": "motion" }
+    ],
+    "dos": ["Do tokens.css", "Do mobile nav dialog", "Do form validation states"],
+    "donts": ["Don't side-tab cards", "Don't icon-tile stacks", "Don't bounce easing"]
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Админка — портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/admin.css" />
+  </head>
+  <body class="admin-page admin-page--login">
+    <div id="login" class="admin-login">
+      <div class="admin-login__wrap">
+        <a class="admin-login__back" href="/">← На сайт</a>
+        <form id="login-form" class="admin-login__card">
+          <div class="admin-login__badge">All4Tutors CMS</div>
+          <h1 class="admin-login__title">редактор сайта.</h1>
+          <p class="admin-login__text">
+            Войдите, чтобы менять тексты и картинки. Пароль по умолчанию:
+            <code>port2026</code> (латинскими буквами).
+          </p>
+          <p id="server-warning" class="admin-login__warn" hidden>
+            Dev-сервер не запущен. В терминале проекта выполните
+            <code>npm.cmd run dev</code> (если PowerShell ругается на npm) и откройте
+            <a href="http://127.0.0.1:5173/admin.html">127.0.0.1:5173/admin.html</a>.
+            Иначе пароль не примется.
+          </p>
+          <label class="admin-field">
+            <span class="admin-field__label">Пароль</span>
+            <input
+              class="admin-input"
+              type="password"
+              id="login-password"
+              autocomplete="current-password"
+              placeholder="Введите пароль"
+              required
+            />
+          </label>
+          <p id="login-error" class="admin-login__error" hidden></p>
+          <button class="admin-btn admin-btn--primary admin-btn--block" type="submit">
+            Войти
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="app" class="admin-app" hidden>
+      <header class="admin-header">
+        <div class="admin-header__inner">
+          <div class="admin-header__brand">
+            <span class="admin-header__logo">✦</span>
+            <div>
+              <h1 class="admin-header__title">редактор.</h1>
+              <p class="admin-header__sub">Изменения → <code>public/content.json</code></p>
+            </div>
+          </div>
+          <div class="admin-header__actions">
+            <a class="admin-btn admin-btn--ghost" href="/" target="_blank" rel="noopener">Сайт</a>
+            <button class="admin-btn admin-btn--ghost" type="button" id="logout-btn">Выйти</button>
+            <button class="admin-btn admin-btn--primary" type="submit" form="admin-form" id="save-btn">
+              Сохранить
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="admin-layout">
+        <aside class="admin-sidebar" aria-label="Разделы">
+          <nav class="admin-nav" id="admin-nav"></nav>
+        </aside>
+
+        <main class="admin-main">
+          <div id="loading" class="admin-loading">
+            <span class="admin-loading__dot"></span>
+            <span class="admin-loading__dot"></span>
+            <span class="admin-loading__dot"></span>
+            <p>Загружаем контент…</p>
+          </div>
+          <form id="admin-form" class="admin-form" hidden>
+            <div id="admin-fields"></div>
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <div id="toast" class="admin-toast" hidden></div>
+    <script type="module" src="/src/admin.js"></script>
+  <!-- impeccable-live-start -->
+<script src="http://localhost:8400/live.js"></script>
+<!-- impeccable-live-end -->
+</body>
+</html>

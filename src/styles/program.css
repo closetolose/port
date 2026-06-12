@@ -1,0 +1,149 @@
+/* ——— Программа: ЕГЭ / ОГЭ ——— */
+
+.program-section__inner {
+  text-align: left;
+}
+
+.program-section__intro {
+  max-width: 36rem;
+  margin-inline: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.program-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--spacing-48) clamp(64px, 14vw, 140px);
+  max-width: 100%;
+  margin-top: var(--spacing-48);
+  margin-inline: auto;
+  text-align: left;
+}
+
+.program-col {
+  flex: 0 1 min(360px, 100%);
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.program-col__badge {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: var(--spacing-24);
+  padding: 12px 28px;
+  font-family: var(--font-din-round);
+  font-size: var(--text-heading-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-heading-sm);
+  line-height: 1.15;
+  color: var(--color-duo-green-text);
+  background: var(--color-snow-white);
+  border: 3px solid var(--color-border);
+  border-radius: 999px;
+  box-shadow: 0 4px 0 var(--color-border-shadow);
+}
+
+.program-col__badge--oge {
+  color: var(--color-sky-blue);
+  border-color: color-mix(in srgb, var(--color-sky-blue) 35%, var(--color-border));
+  box-shadow: 0 4px 0 color-mix(in srgb, var(--color-sky-blue) 40%, var(--color-border-shadow));
+}
+
+.program-col .skills-list {
+  margin-top: 0;
+  gap: var(--spacing-24);
+  width: 100%;
+  max-width: 22rem;
+  margin-inline: auto;
+}
+
+.program-col .skill-item {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  align-items: center;
+  gap: var(--spacing-16);
+}
+
+.program-col .skill-item__label {
+  min-width: 0;
+  width: 11rem;
+  font-size: var(--text-body);
+  letter-spacing: var(--tracking-body);
+}
+
+.program-col .skill-item__bar {
+  width: 100%;
+  min-width: 0;
+  height: 18px;
+}
+
+@media (max-width: 900px) {
+  .program-cols {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-32);
+    margin-top: var(--spacing-32);
+  }
+
+  .program-col {
+    flex: 1 1 100%;
+    max-width: none;
+    width: 100%;
+    padding: var(--spacing-24) var(--spacing-16);
+    background: var(--color-snow-white);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-cards);
+    box-shadow: 0 4px 0 var(--color-border-shadow);
+  }
+
+  .program-col__badge {
+    margin-inline: 0;
+    margin-bottom: var(--spacing-24);
+  }
+
+  .program-col .skills-list {
+    margin-inline: 0;
+    max-width: none;
+    gap: var(--spacing-16);
+  }
+
+  .program-col .skill-item {
+    grid-template-columns: minmax(0, 7.5rem) minmax(0, 1fr);
+    gap: var(--spacing-12);
+  }
+
+  .program-col .skill-item__label {
+    width: auto;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 900px) {
+  .program-cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-16);
+  }
+
+  .program-col {
+    padding: var(--spacing-16);
+  }
+
+  .program-col__badge {
+    margin-inline: auto;
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+
+  .program-col .skill-item {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+}

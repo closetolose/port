@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Репетитор по информатике: подготовка к ЕГЭ и ОГЭ 2027. Python, алгоритмы, практика на реальных заданиях."
+    />
+    <title>Репетитор по информатике: ЕГЭ и ОГЭ 2027</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#about">Перейти к содержимому</a>
+    <div class="page">
+      <header class="header">
+        <div class="container header__inner">
+          <a href="#" class="logo" data-logo>
+            <span>Никита · информатика</span>
+          </a>
+          <div class="header__actions">
+            <nav class="nav nav--desktop" aria-label="Основное меню">
+              <a class="nav__link" href="#about">Обо мне</a>
+              <a class="nav__link" href="#programs">Занятия</a>
+              <a class="nav__link" href="#benefits">Плюсы</a>
+              <a class="nav__link" href="#dashboard">Дашборд</a>
+              <a class="nav__link" href="#reviews">Отзывы</a>
+              <a class="nav__link" href="#skills">Программа</a>
+              <a class="nav__link" href="#contact">Контакты</a>
+            </nav>
+            <button
+              type="button"
+              class="nav-toggle"
+              aria-expanded="false"
+              aria-controls="site-menu"
+              aria-label="Открыть меню"
+            >
+              <span class="nav-toggle__line" aria-hidden="true"></span>
+              <span class="nav-toggle__line" aria-hidden="true"></span>
+              <span class="nav-toggle__line" aria-hidden="true"></span>
+            </button>
+            <a class="btn btn--primary header__cta" href="#contact">Записаться</a>
+          </div>
+        </div>
+      </header>
+
+      <nav class="mobile-jump container" aria-label="Быстрые разделы">
+        <a class="mobile-jump__link" href="#about">Обо мне</a>
+        <a class="mobile-jump__link" href="#programs">Занятия</a>
+        <a class="mobile-jump__link" href="#benefits">Плюсы</a>
+        <a class="mobile-jump__link" href="#dashboard">Дашборд</a>
+        <a class="mobile-jump__link" href="#reviews">Отзывы</a>
+        <a class="mobile-jump__link" href="#skills">Программа</a>
+        <a class="mobile-jump__link" href="#contact">Контакты</a>
+      </nav>
+
+      <dialog class="site-menu" id="site-menu" aria-label="Навигация по сайту">
+        <div class="site-menu__panel">
+          <button type="button" class="site-menu__close" aria-label="Закрыть меню">
+            <span aria-hidden="true">×</span>
+          </button>
+          <nav class="site-menu__nav" aria-label="Мобильное меню">
+            <a class="site-menu__link" href="#about">Обо мне</a>
+            <a class="site-menu__link" href="#programs">Занятия</a>
+            <a class="site-menu__link" href="#benefits">Плюсы</a>
+            <a class="site-menu__link" href="#dashboard">Дашборд</a>
+            <a class="site-menu__link" href="#reviews">Отзывы</a>
+            <a class="site-menu__link" href="#skills">Программа</a>
+            <a class="site-menu__link" href="#contact">Контакты</a>
+          </nav>
+          <a class="btn btn--primary site-menu__cta" href="#contact">Записаться</a>
+        </div>
+      </dialog>
+
+      <main>
+        <section id="about" class="hero" data-hero-photo-position="left">
+          <div class="container">
+            <div class="hero__canvas">
+              <p class="hero__tagline" data-hero-block="tagline">Никита — репетитор по информатике</p>
+              <h1 class="headline-green headline-green--lg" data-hero-block="title">обо мне.</h1>
+              <div class="hero__intro-wrap" data-hero-block="intro">
+                <p class="hero__intro">
+                  Готовлю к <strong>ЕГЭ и ОГЭ по информатике</strong>.
+                </p>
+              </div>
+              <div class="hero__portrait-stage reveal reveal--from-left" data-hero-block="photo">
+                <img
+                  class="portrait"
+                  src="/photo.png"
+                  alt="Никита, репетитор по информатике"
+                  width="320"
+                  height="400"
+                  loading="eager"
+                />
+                <span class="exam-badge exam-badge--ege">ЕГЭ 2027</span>
+                <span class="exam-badge exam-badge--oge">ОГЭ 2027</span>
+              </div>
+              <div class="hero__block" data-hero-block="approach">
+                <p class="hero__block-title hero__block-title--approach">Мой подход</p>
+                <ul class="hero__list hero__list--approach">
+                  <li>Python, алгоритмы и теория.</li>
+                  <li>Объясняю по шагам и без зубрёжки.</li>
+                  <li>Упор на понимание и практику.</li>
+                </ul>
+              </div>
+              <div class="hero__block" data-hero-block="lessons">
+                <p class="hero__block-title hero__block-title--lessons">На занятиях</p>
+                <ul class="hero__list hero__list--lessons">
+                  <li>Пишем живой код.</li>
+                  <li>Решаем задачи прошлых лет.</li>
+                  <li>Тренируем время на экзамене.</li>
+                </ul>
+              </div>
+              <p class="hero__note" data-hero-block="note">Набор на 2026–2027 учебный год.</p>
+              <div class="hero__cta" data-hero-block="cta">
+                <a class="btn btn--primary" href="#contact">Записаться</a>
+                <a class="btn btn--outline" href="#programs">Форматы занятий</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="programs" class="section">
+          <div class="container">
+            <h2 class="headline-green headline-green--lg reveal">занятия.</h2>
+            <p class="body-text reveal" style="max-width: 36rem; --reveal-delay: 80ms">
+              Индивидуально и в мини-группах: от базы в 9 классе до
+              высоких баллов на ЕГЭ.
+            </p>
+            <p class="programs-hint">Листайте вправо →</p>
+            <div class="projects-grid">
+              <article class="card reveal" style="--reveal-delay: 0ms">
+                <span class="card__icon card__icon--letter" aria-hidden="true">Е</span>
+                <h3 class="card__title">ЕГЭ 2027</h3>
+                <p class="card__desc">
+                  Python, алгоритмизация, задания 13–27: от базы до
+                  повышенной сложности, пробники и разбор КИМ.
+                </p>
+                <ul class="card__rates" aria-label="Стоимость занятий">
+                  <li class="card__rate">
+                    <span class="card__rate-label">Индивидуально</span>
+                    <span class="card__rate-value">
+                      1&nbsp;500&nbsp;₽
+                      <span class="card__rate-time">/ 60 мин</span>
+                    </span>
+                  </li>
+                  <li class="card__rate card__rate--group">
+                    <span class="card__rate-label">В группе</span>
+                    <span class="card__rate-value">
+                      1&nbsp;000&nbsp;₽
+                      <span class="card__rate-time">/ 60 мин</span>
+                    </span>
+                  </li>
+                </ul>
+              </article>
+              <article class="card reveal" style="--reveal-delay: 100ms">
+                <span class="card__icon card__icon--letter" aria-hidden="true">О</span>
+                <h3 class="card__title">ОГЭ 2027</h3>
+                <p class="card__desc">
+                  Теория, Excel и Python по кодификатору, типовые задачи
+                  и тренировка на время, спокойно и системно.
+                </p>
+                <ul class="card__rates" aria-label="Стоимость занятий">
+                  <li class="card__rate">
+                    <span class="card__rate-label">Индивидуально</span>
+                    <span class="card__rate-value">
+                      1&nbsp;500&nbsp;₽
+                      <span class="card__rate-time">/ 60 мин</span>
+                    </span>
+                  </li>
+                  <li class="card__rate card__rate--group">
+                    <span class="card__rate-label">В группе</span>
+                    <span class="card__rate-value">
+                      1&nbsp;000&nbsp;₽
+                      <span class="card__rate-time">/ 60 мин</span>
+                    </span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="benefits" class="section benefits">
+          <div class="container">
+            <h2 class="headline-green headline-green--lg reveal">почему со мной.</h2>
+            <p class="body-text benefits__intro reveal">
+              Подготовка к информатике без сухой зубрёжки: понятная логика,
+              практика и поддержка до экзамена.
+            </p>
+            <p class="benefits-hint">Листайте вправо →</p>
+            <ul class="benefits-grid">
+              <li class="benefit-card benefit-card--lead reveal" style="--reveal-delay: 0ms">
+                <div class="benefit-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#d7ffb8" />
+                    <path
+                      d="M14 34V18h8l6 10 6-10h8v16"
+                      stroke="#58cc02"
+                      stroke-width="3"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="benefit-card__title">План под вас</h3>
+                <p class="benefit-card__text">
+                  ОГЭ, ЕГЭ или «подтянуть базу»: программа под ваш класс,
+                  сроки и текущий уровень, без лишних тем.
+                </p>
+              </li>
+              <li class="benefit-card reveal" style="--reveal-delay: 80ms">
+                <div class="benefit-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#d7ffb8" />
+                    <rect
+                      x="12"
+                      y="14"
+                      width="24"
+                      height="20"
+                      rx="4"
+                      stroke="#58cc02"
+                      stroke-width="3"
+                    />
+                    <path d="M18 22h12M18 28h8" stroke="#58cc02" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <h3 class="benefit-card__title">Задания как на экзамене</h3>
+                <p class="benefit-card__text">
+                  Разбираем форматы КИМ, типовые ловушки и критерии
+                  проверки, чтобы на экзамене не было сюрпризов.
+                </p>
+              </li>
+              <li class="benefit-card reveal" style="--reveal-delay: 160ms">
+                <div class="benefit-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#d7ffb8" />
+                    <path
+                      d="M16 32c0-8 4-14 8-14s8 6 8 14"
+                      stroke="#58cc02"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="20" cy="18" r="2" fill="#58cc02" />
+                    <circle cx="28" cy="18" r="2" fill="#58cc02" />
+                  </svg>
+                </div>
+                <h3 class="benefit-card__title">Python понятным языком</h3>
+                <p class="benefit-card__text">
+                  Объясняю простыми словами, много пишем код на занятии:
+                  от переменных до задач повышенной сложности.
+                </p>
+              </li>
+              <li class="benefit-card reveal" style="--reveal-delay: 0ms">
+                <div class="benefit-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none">
+                    <rect width="48" height="48" rx="12" fill="#d7ffb8" />
+                    <path
+                      d="M14 30l10-12 8 8 12-16"
+                      stroke="#58cc02"
+                      stroke-width="3"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="benefit-card__title">Виден прогресс</h3>
+                <p class="benefit-card__text">
+                  Отслеживаем темы и баллы на пробниках: понятно,
+                  что уже получается, а что ещё добить.
+                </p>
+              </li>
+              <li class="benefit-card benefit-card--accent reveal" style="--reveal-delay: 80ms">
+                <h3 class="benefit-card__title">Удобное время</h3>
+                <p class="benefit-card__text">
+                  Занятия онлайн, подстроюсь под школу, секции и
+                  нагрузку: можно вечером или в выходные.
+                </p>
+              </li>
+              <li class="benefit-card benefit-card--accent reveal" style="--reveal-delay: 160ms">
+                <h3 class="benefit-card__title">Помощь между уроками</h3>
+                <p class="benefit-card__text">
+                  Застряли на домашке? Напишите, подскажу по задаче,
+                  чтобы не копить пробелы до следующего занятия.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="dashboard" class="section dashboard-section" aria-labelledby="dashboard-title">
+          <div class="container dashboard">
+            <div class="dashboard__content reveal">
+              <span class="dashboard__eyebrow">Только у моих учеников</span>
+              <h2 id="dashboard-title" class="headline-green headline-green--lg">
+                мой дашборд.
+              </h2>
+              <p class="body-text dashboard__lead">
+                Не просто занятия в Zoom: у каждого ученика личный кабинет
+                <strong>All4Tutors</strong>: расписание, задания, оплаты и
+                прогресс в одном месте.
+              </p>
+              <ul class="dashboard__features">
+                <li class="dashboard__feature">
+                  <span class="dashboard__feature-icon" aria-hidden="true">✓</span>
+                  Расписание и напоминания о занятиях
+                </li>
+                <li class="dashboard__feature">
+                  <span class="dashboard__feature-icon" aria-hidden="true">✓</span>
+                  Прогресс по темам и баллы на пробниках
+                </li>
+                <li class="dashboard__feature">
+                  <span class="dashboard__feature-icon" aria-hidden="true">✓</span>
+                  Домашки, конспекты и ссылки на разборы
+                </li>
+              </ul>
+              <a class="btn btn--primary" href="#contact">Записаться на занятие</a>
+            </div>
+            <figure
+              class="dashboard-shot reveal reveal--from-right section__visual"
+            >
+              <img
+                class="dashboard-shot__img"
+                src="/all4tutors-dashboard.png"
+                alt="All4Tutors: дашборд ученика, расписание, задания и оплаты"
+                width="1280"
+                height="720"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section id="reviews" class="section reviews">
+          <div class="container">
+            <h2 class="headline-green headline-green--lg reveal">отзывы.</h2>
+            <p class="body-text reviews__intro reveal">
+              Реальные отзывы: скриншоты с Авито и из переписки с учениками.
+            </p>
+            <div
+              class="reviews-carousel reveal"
+              data-reviews-carousel
+              tabindex="0"
+              aria-roledescription="carousel"
+              aria-label="Отзывы учеников"
+            >
+              <div class="reviews-carousel__stage">
+              <button
+                type="button"
+                class="reviews-carousel__arrow reviews-carousel__arrow--prev"
+                aria-label="Предыдущий отзыв"
+              >
+                ‹
+              </button>
+              <div class="reviews-carousel__viewport">
+                <ul class="reviews-carousel__track">
+                  <li class="review-slide">
+                    <figure class="review-shot">
+                      <img
+                        class="review-shot__img"
+                        src="/reviews/review-avito-1.png"
+                        alt="Отзыв на Авито, kost, 5 звёзд"
+                        width="600"
+                        height="400"
+                        loading="eager"
+                      />
+                    </figure>
+                  </li>
+                  <li class="review-slide">
+                    <figure class="review-shot">
+                      <img
+                        class="review-shot__img"
+                        src="/reviews/review-avito-2.png"
+                        alt="Отзыв на Авито, Мария, 5 звёзд"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </li>
+                  <li class="review-slide">
+                    <figure class="review-shot">
+                      <img
+                        class="review-shot__img"
+                        src="/reviews/review-avito-3.png"
+                        alt="Отзыв на Авито, пересдача, 46 до 64 баллов"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </li>
+                  <li class="review-slide">
+                    <figure class="review-shot">
+                      <img
+                        class="review-shot__img"
+                        src="/reviews/review-avito-4.png"
+                        alt="Отзыв на Авито, рекомендация репетитора"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </li>
+                  <li class="review-slide">
+                    <figure class="review-shot">
+                      <img
+                        class="review-shot__img"
+                        src="/reviews/review-avito-5.png"
+                        alt="Отзыв на Авито, рекомендация Никиты как преподавателя"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </li>
+                  <li class="review-slide">
+                    <figure class="review-shot">
+                      <img
+                        class="review-shot__img"
+                        src="/reviews/review-avito-6.png"
+                        alt="Отзыв на Авито, отличный преподаватель"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </li>
+                  <li class="review-slide">
+                    <figure class="review-shot">
+                      <img
+                        class="review-shot__img"
+                        src="/reviews/review-tg-1.png"
+                        alt="Отзыв в переписке, благодарность после подготовки"
+                        width="600"
+                        height="200"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </li>
+                  <li class="review-slide">
+                    <figure class="review-shot">
+                      <img
+                        class="review-shot__img"
+                        src="/reviews/review-tg-2.png"
+                        alt="Отзыв в переписке, лучший репетитор"
+                        width="600"
+                        height="200"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="reviews-carousel__arrow reviews-carousel__arrow--next"
+                aria-label="Следующий отзыв"
+              >
+                ›
+              </button>
+              </div>
+              <div class="reviews-carousel__dots" role="tablist" aria-label="Выбор отзыва"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section program-section">
+          <div class="container program-section__inner">
+            <h2 class="headline-green headline-green--lg reveal">программа.</h2>
+            <p class="body-text program-section__intro reveal">
+              Что проходим на занятиях: под ваш класс и цель экзамена.
+            </p>
+            <div class="program-cols">
+                <div class="program-col reveal">
+                  <span class="program-col__badge">ЕГЭ</span>
+                  <ul class="skills-list">
+                    <li class="skill-item">
+                      <span class="skill-item__label">Python</span>
+                      <div class="skill-item__bar">
+                        <div class="skill-item__fill" data-skill-width="66"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-item__label">Excel+Word</span>
+                      <div class="skill-item__bar">
+                        <div class="skill-item__fill" data-skill-width="15"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-item__label">Ручные задания</span>
+                      <div class="skill-item__bar">
+                        <div class="skill-item__fill" data-skill-width="19"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="program-col program-col--oge reveal">
+                  <span class="program-col__badge program-col__badge--oge">ОГЭ</span>
+                  <ul class="skills-list">
+                    <li class="skill-item">
+                      <span class="skill-item__label">Ручные задания</span>
+                      <div class="skill-item__bar">
+                        <div class="skill-item__fill" data-skill-width="62.5"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-item__label">Excel+Word</span>
+                      <div class="skill-item__bar">
+                        <div class="skill-item__fill" data-skill-width="12.5"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-item__label">Кумир</span>
+                      <div class="skill-item__bar">
+                        <div class="skill-item__fill" data-skill-width="6.25"></div>
+                      </div>
+                    </li>
+                    <li class="skill-item">
+                      <span class="skill-item__label">Python</span>
+                      <div class="skill-item__bar">
+                        <div class="skill-item__fill" data-skill-width="6.25"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section">
+          <div class="container section__grid section__grid--reverse">
+            <div class="section__content reveal reveal--from-right">
+              <h2 class="headline-green headline-green--lg">напишите.</h2>
+              <p class="body-text">
+                Хотите на пробный урок или уточнить расписание? Напишите класс,
+                цель (ОГЭ / ЕГЭ) и удобное время, отвечу в течение суток.
+              </p>
+              <form class="contact-form" action="#" method="post" novalidate>
+                <p class="form-status" role="status" aria-live="polite" hidden></p>
+                <div class="form-field">
+                  <label class="form-field__label" for="contact-name">Ваше имя</label>
+                  <input
+                    class="input"
+                    id="contact-name"
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя"
+                    required
+                    maxlength="80"
+                    autocomplete="name"
+                    aria-describedby="contact-name-error"
+                  />
+                  <span class="form-field__error" id="contact-name-error" hidden></span>
+                </div>
+                <div class="form-field">
+                  <label class="form-field__label" for="contact-email">Email</label>
+                  <input
+                    class="input"
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    maxlength="120"
+                    autocomplete="email"
+                    inputmode="email"
+                    aria-describedby="contact-email-error"
+                  />
+                  <span class="form-field__error" id="contact-email-error" hidden></span>
+                </div>
+                <div class="form-field">
+                  <label class="form-field__label" for="contact-message">Сообщение</label>
+                  <textarea
+                    class="input textarea"
+                    id="contact-message"
+                    name="message"
+                    placeholder="Класс, ОГЭ или ЕГЭ, что хотите подтянуть..."
+                    required
+                    maxlength="2000"
+                    rows="5"
+                    aria-describedby="contact-message-error"
+                  ></textarea>
+                  <span class="form-field__error" id="contact-message-error" hidden></span>
+                </div>
+                <button type="submit" class="btn btn--primary">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <aside class="contact-card reveal reveal--from-left section__visual" aria-label="Контакты">
+              <div class="contact-card__window">
+                <p class="contact-card__header">Контакты</p>
+                <div class="contact-card__body">
+                  <img
+                    class="contact-card__avatar"
+                    src="/photo.png"
+                    alt="Никита, репетитор по информатике"
+                    width="128"
+                    height="128"
+                    loading="lazy"
+                  />
+                  <h3 class="contact-card__name">Никита</h3>
+                  <p class="contact-card__role">Репетитор по информатике</p>
+                  <ul class="contact-card__list">
+                    <li>
+                      <a class="contact-card__link contact-card__link--phone" href="tel:+79504303801">
+                        +7 950 430-38-01
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="contact-card__link contact-card__link--telegram"
+                        href="https://t.me/closetolose"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        @closetolose
+                      </a>
+                    </li>
+                    <li>
+                      <a class="contact-card__link" href="mailto:closetolose@gmail.com">
+                        closetolose@gmail.com
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="tools-showcase" aria-label="Инструменты">
+          <div class="tools-showcase__wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 88" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="#f4f8fe"
+                d="M0,0 L0,44 Q360,88 720,44 T1440,44 L1440,0 Z"
+              />
+            </svg>
+          </div>
+          <div class="tools-showcase__inner">
+            <h2 class="tools-showcase__title">На занятиях</h2>
+            <p class="tools-showcase__subtitle">
+              Python, таблицы и тексты: всё, что встречается на ОГЭ и ЕГЭ
+            </p>
+            <div class="tools-stage">
+              <div
+                class="tools-float tools-float--python"
+                style="animation-delay: 0s"
+              >
+                <img src="/icons/python.png" alt="Python" width="44" height="44" />
+              </div>
+              <div
+                class="tools-float tools-float--excel"
+                style="animation-delay: 0.35s"
+              >
+                <img src="/icons/excel.png" alt="Microsoft Excel" width="40" height="40" />
+              </div>
+              <div
+                class="tools-float tools-float--word"
+                style="animation-delay: 1s"
+              >
+                <img src="/icons/word.png" alt="Microsoft Word" width="44" height="44" />
+              </div>
+              <div
+                class="tools-float tools-float--calc"
+                style="animation-delay: 0.5s"
+              >
+                <img src="/icons/calc.png" alt="LibreOffice Calc" width="44" height="44" />
+              </div>
+              <div
+                class="tools-float tools-float--writer"
+                style="animation-delay: 1.2s"
+              >
+                <img src="/icons/writer.png" alt="LibreOffice Writer" width="40" height="40" />
+              </div>
+              <div class="tools-stage__laptop">
+                <img
+                  src="/icons/laptop.png"
+                  alt=""
+                  width="280"
+                  height="200"
+                />
+              </div>
+            </div>
+            <a class="btn btn--sky" href="#contact">Записаться на урок</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="layout-lab" id="layout-lab" hidden>
+      <div class="layout-lab__bar">
+        <div class="layout-lab__group" role="group" aria-label="Вариант мобильной вёрстки">
+          <button type="button" class="layout-lab__btn" data-layout="stack">Стек</button>
+          <button type="button" class="layout-lab__btn" data-layout="cards">Карточки</button>
+          <button type="button" class="layout-lab__btn" data-layout="snap">Свайп</button>
+        </div>
+        <a class="mobile-cta-bar btn" href="#contact">Записаться</a>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  
+
+<!-- impeccable-live-start -->
+<script src="http://localhost:8400/live.js"></script>
+<!-- impeccable-live-end -->
+</body>
+</html>

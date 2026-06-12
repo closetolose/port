@@ -1,0 +1,236 @@
+/* ——— Адаптив: телефон, планшет, touch ——— */
+
+html {
+  overflow-x: clip;
+}
+
+.container {
+  padding-inline: var(--container-padding);
+}
+
+.header {
+  padding-top: env(safe-area-inset-top, 0);
+}
+
+/* Планшет: две колонки в benefits */
+@media (min-width: 601px) and (max-width: 900px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .benefit-card,
+  .benefit-card--accent {
+    grid-column: span 1;
+  }
+
+  .benefit-card--lead {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding-block: var(--spacing-48) var(--spacing-64);
+  }
+
+  .header__inner {
+    min-height: 64px;
+    gap: var(--spacing-12);
+  }
+
+  .logo {
+    font-size: clamp(15px, 3.8vw, var(--text-heading-sm));
+    min-width: 0;
+  }
+
+  .logo__mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .section__grid {
+    gap: var(--spacing-40);
+  }
+
+  .section__actions,
+  .hero__cta {
+    width: 100%;
+  }
+
+  .section__actions .btn,
+  .hero__cta .btn,
+  .dashboard__content > .btn,
+  .contact-form .btn,
+  .tools-showcase .btn--sky {
+    width: 100%;
+    max-width: 28rem;
+  }
+
+  .section__actions .btn,
+  .hero__cta .btn,
+  .contact-form .btn,
+  .tools-showcase .btn--sky {
+    max-width: none;
+  }
+
+  #about.hero .hero__cta .btn {
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .contact-form {
+    max-width: none;
+    width: 100%;
+  }
+
+  .input,
+  .textarea {
+    font-size: 16px;
+  }
+
+  .tools-showcase {
+    padding-top: var(--spacing-64);
+  }
+
+  .tools-showcase__inner {
+    padding-inline: var(--container-padding);
+  }
+
+  .program-col .skill-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--spacing-8);
+  }
+
+  .program-col .skill-item__label {
+    width: auto;
+    min-width: 0;
+  }
+
+  .benefits__intro {
+    margin-bottom: var(--spacing-32);
+  }
+
+  .benefit-card--lead {
+    padding: var(--card-padding);
+  }
+
+  #contact .section__content {
+    order: 1;
+  }
+
+  #contact .contact-card {
+    order: 2;
+  }
+
+  html[data-mobile-layout='stack'] .section > .container > .headline-green,
+  html[data-mobile-layout='stack'] .section > .container > .body-text,
+  html:not([data-mobile-layout]) .section > .container > .headline-green,
+  html:not([data-mobile-layout]) .section > .container > .body-text {
+    text-align: left;
+  }
+
+  html[data-mobile-layout='stack'] .benefits__intro,
+  html:not([data-mobile-layout]) .benefits__intro {
+    margin-bottom: var(--spacing-24);
+  }
+}
+
+@media (max-width: 600px) {
+  .card__rate {
+    flex-wrap: wrap;
+    row-gap: var(--spacing-4);
+  }
+
+  .card__rate-value {
+    font-size: var(--text-heading-sm);
+  }
+
+  .reviews-carousel__stage {
+    padding-inline: 40px;
+  }
+
+  .reviews-carousel__arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .contact-card__avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .dashboard-shot__img {
+    border-radius: 12px;
+    box-shadow:
+      0 3px 0 var(--color-border-shadow),
+      0 16px 32px color-mix(in srgb, #5d5fef 12%, transparent);
+  }
+
+  .program-cols {
+    gap: var(--spacing-32);
+  }
+
+  .program-col__badge {
+    padding: 10px 20px;
+    font-size: var(--text-body);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo span {
+    white-space: normal;
+    line-height: 1.15;
+  }
+
+  .btn {
+    white-space: normal;
+    hyphens: none;
+  }
+
+  .projects-grid {
+    gap: var(--spacing-16);
+  }
+
+  .card {
+    column-gap: var(--spacing-12);
+  }
+
+  .card__icon,
+  .card__icon--letter {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+
+  .site-menu {
+    width: 100%;
+  }
+
+  .site-menu__panel {
+    border-left: none;
+    box-shadow: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .btn,
+  .nav-toggle,
+  .site-menu__link,
+  .reviews-carousel__arrow,
+  .reviews-carousel__dot,
+  .contact-card__link {
+    touch-action: manipulation;
+  }
+
+  .card:hover {
+    border-color: var(--color-border);
+    box-shadow: 0 4px 0 var(--color-border-shadow);
+    transform: none;
+  }
+
+  .contact-card__link:hover {
+    transform: none;
+  }
+}

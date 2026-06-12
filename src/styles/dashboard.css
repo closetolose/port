@@ -1,0 +1,119 @@
+/* ——— Мой дашборд (All4Tutors) ——— */
+
+.dashboard-section {
+  overflow: visible;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: var(--spacing-48);
+  align-items: center;
+}
+
+.dashboard__eyebrow {
+  display: block;
+  margin-bottom: var(--spacing-8);
+  padding: 0;
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--color-sky-blue-text);
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+.dashboard__content .headline-green {
+  margin-bottom: var(--spacing-16);
+}
+
+.dashboard__lead {
+  max-width: 28rem;
+  margin-bottom: var(--spacing-24);
+}
+
+.dashboard__features {
+  margin: 0 0 var(--spacing-32);
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.dashboard__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-12);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-charcoal);
+  letter-spacing: var(--tracking-body);
+}
+
+.dashboard__feature-icon {
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+  display: inline;
+  background: none;
+  color: var(--color-duo-green-text);
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.dashboard-shot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-shot__img {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  border: 2px solid var(--color-border);
+  border-radius: 14px;
+  background: var(--color-snow-white);
+  box-shadow:
+    0 4px 0 var(--color-border-shadow),
+    0 24px 48px color-mix(in srgb, #5d5fef 14%, transparent);
+  animation: dashboard-shot-float 4.5s ease-in-out infinite;
+}
+
+@keyframes dashboard-shot-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-shot__img {
+    animation: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-40);
+  }
+
+  .dashboard-shot {
+    order: -1;
+  }
+
+  .dashboard-shot__img {
+    width: 100%;
+  }
+}

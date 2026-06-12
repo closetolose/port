@@ -1,0 +1,103 @@
+/* ——— Режим визуального редактирования (iframe ?hero-edit=1) ——— */
+
+html.hero-visual-edit {
+  scroll-behavior: auto;
+}
+
+html.hero-visual-edit .header,
+html.hero-visual-edit .mobile-jump,
+html.hero-visual-edit .layout-lab,
+html.hero-visual-edit .mobile-cta-bar,
+html.hero-visual-edit main > :not(#about) {
+  display: none !important;
+}
+
+html.hero-visual-edit,
+html.hero-visual-edit body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--color-snow-white, #fff);
+}
+
+html.hero-visual-edit .page,
+html.hero-visual-edit main {
+  min-height: 0;
+}
+
+html.hero-visual-edit body {
+  padding: 36px 0 12px;
+}
+
+html.hero-visual-edit #about {
+  min-height: 0;
+  overflow: visible;
+  padding-block: var(--hero-section-pt, 48px) var(--hero-section-pb, 40px);
+}
+
+html.hero-visual-edit #about .container {
+  max-width: 100%;
+}
+
+html.hero-visual-edit .exam-badge {
+  animation: none !important;
+}
+
+.hero-visual-target {
+  cursor: pointer;
+  outline: 2px dashed transparent;
+  outline-offset: 4px;
+  transition: outline-color 0.15s ease;
+}
+
+.hero-visual-target:hover {
+  outline-color: color-mix(in srgb, #1cb0f6 55%, transparent);
+}
+
+.hero-visual-target--active {
+  outline: 2px solid #1cb0f6;
+  outline-offset: 4px;
+}
+
+html.hero-visual-edit .hero__portrait-stage {
+  cursor: grab;
+  touch-action: none;
+}
+
+html.hero-visual-edit .hero__portrait-stage:active {
+  cursor: grabbing;
+}
+
+html.hero-visual-edit [data-hero-block] {
+  cursor: pointer;
+  outline: 2px dashed transparent;
+  outline-offset: 3px;
+  transition: outline-color 0.15s ease;
+}
+
+html.hero-visual-edit [data-hero-block]:hover {
+  outline-color: color-mix(in srgb, #1cb0f6 45%, transparent);
+}
+
+html.hero-visual-edit [data-hero-block].hero-visual-target--active {
+  outline: 2px solid #1cb0f6;
+}
+
+.hero-visual-resize-handle {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  z-index: 5;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: #1cb0f6;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+  cursor: nwse-resize;
+  touch-action: none;
+}
+
+html[data-hero-visual-viewport='mobile'] {
+  max-width: 390px;
+  margin-inline: auto;
+}
