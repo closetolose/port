@@ -9,7 +9,6 @@ import {
 import { initReviewsCarousel } from './reviews-carousel.js';
 import { initMobileNav } from './nav.js';
 import { initContactForm } from './contact-form.js';
-import { initMobileLayout } from './mobile-layout.js';
 import { initHeroVisualBridge } from './hero-visual-bridge.js';
 
 function mountIllustrations() {
@@ -28,7 +27,6 @@ async function bootstrap() {
   initReviewsCarousel();
   initMobileNav();
   initContactForm();
-  initMobileLayout();
 }
 
 bootstrap();

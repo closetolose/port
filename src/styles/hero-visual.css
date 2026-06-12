@@ -5,9 +5,6 @@ html.hero-visual-edit {
 }
 
 html.hero-visual-edit .header,
-html.hero-visual-edit .mobile-jump,
-html.hero-visual-edit .layout-lab,
-html.hero-visual-edit .mobile-cta-bar,
 html.hero-visual-edit main > :not(#about) {
   display: none !important;
 }
